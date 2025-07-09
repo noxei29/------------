@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="indexStyle.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="shortcut icon" href="water.png" type="image/x-icon">
     <title>Meter Water</title>
 </head>
+
 <body>
     <div class="menu">
         <div class="head">
-            <img src="water.png" alt="logo" width="50" height="50"><h2>Meter Water</h2>
+            <img src="water.png" alt="logo" width="50" height="50">
+            <h2>Meter Water</h2>
         </div>
         <br>
         <p>Overview</p>
         <div class="tab">
-            <a href="index.html" style="background: #fff; color: #194dd1;"><img src="home.png" alt="dash" width="30" height="30">Dashboard</a>
+            <a href="index.html" style="background: #fff; color: #194dd1;"><img src="home.png" alt="dash" width="30"
+                    height="30">Dashboard</a>
             <a href="table.html"><img src="table.png" alt="table" width="30" height="30">Table</a>
             <a href="sum.html"><img src="contract.png" alt="sum" width="30" height="30">Sum</a>
         </div>
@@ -23,16 +28,45 @@
     <div class="content">
         <h3 style="font-weight: 400;">Welcome</h3>
         <h1>Meter Reading</h1>
-        <div class="viewbar">
-            <a href="#">รายชั่วโมง</a>
-            <a href="#">รายวัน</a>
-            <a href="#">รายเดือน</a>
-            <a href="#">รายปี</a>
-            <a href="#" id="check">ตรวจสอบ</a>
-        </div>
+
         <div class="graph">
-            <p>ดึง API</p>
+            <a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#showMeterModal" style="margin-left: 10px;"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_TcNAAL--B7S_5AKRSWVSkp4zyHcPrR2h1A&s" width="150" height="100"></a>
+            <a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#showMeterModal" style="margin-left: 10px;"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_TcNAAL--B7S_5AKRSWVSkp4zyHcPrR2h1A&s" width="150" height="100"></a>
+            <a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#showMeterModal" style="margin-left: 10px;"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_TcNAAL--B7S_5AKRSWVSkp4zyHcPrR2h1A&s" width="150" height="100"></a>
         </div>
     </div>
+
+    <!-- Modal show meter -->
+    <div class="modal fade" id="showMeterModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">มิเตอร์ หมายเลข 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div style="display: flex;">
+                        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS04psvdRRbtqNHUwOd3gbTVn4foEJxw-CjUg&s"></div>
+                        <div style="padding-left: 10px;">
+                            เลขหน่วย: 1312 <br>
+                            ราคาต่อหน่วย: 9999999<br> 
+                            ราคารวม: 9999999 <br>
+                            lorem : Lorem, ipsum dolor. <br>
+                            lorem : Lorem, ipsum dolor.
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
 </body>
+
 </html>
